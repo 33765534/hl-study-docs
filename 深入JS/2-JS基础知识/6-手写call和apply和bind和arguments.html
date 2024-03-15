@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>实现手写 call | 学习文档</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    
+    <meta name="description" content="学习使用 js">
+    
+    <link rel="preload" href="/hl-study-docs/assets/css/0.styles.fca0694a.css" as="style"><link rel="preload" href="/hl-study-docs/assets/js/app.a7a0deb5.js" as="script"><link rel="preload" href="/hl-study-docs/assets/js/2.ed2108dc.js" as="script"><link rel="preload" href="/hl-study-docs/assets/js/1.50f09b5a.js" as="script"><link rel="preload" href="/hl-study-docs/assets/js/28.3c356d13.js" as="script"><link rel="prefetch" href="/hl-study-docs/assets/js/10.7a8fbf8e.js"><link rel="prefetch" href="/hl-study-docs/assets/js/11.bb7db750.js"><link rel="prefetch" href="/hl-study-docs/assets/js/12.972143b3.js"><link rel="prefetch" href="/hl-study-docs/assets/js/13.c0b20c18.js"><link rel="prefetch" href="/hl-study-docs/assets/js/14.94caa370.js"><link rel="prefetch" href="/hl-study-docs/assets/js/15.41e99379.js"><link rel="prefetch" href="/hl-study-docs/assets/js/16.3d4d0357.js"><link rel="prefetch" href="/hl-study-docs/assets/js/17.3622e246.js"><link rel="prefetch" href="/hl-study-docs/assets/js/18.5d6399c1.js"><link rel="prefetch" href="/hl-study-docs/assets/js/19.a85acb05.js"><link rel="prefetch" href="/hl-study-docs/assets/js/20.38807455.js"><link rel="prefetch" href="/hl-study-docs/assets/js/21.5bf9cc97.js"><link rel="prefetch" href="/hl-study-docs/assets/js/22.1ee5dd9f.js"><link rel="prefetch" href="/hl-study-docs/assets/js/23.8180e310.js"><link rel="prefetch" href="/hl-study-docs/assets/js/24.163b747e.js"><link rel="prefetch" href="/hl-study-docs/assets/js/25.31d34bef.js"><link rel="prefetch" href="/hl-study-docs/assets/js/26.1b816ef0.js"><link rel="prefetch" href="/hl-study-docs/assets/js/27.2ab754e9.js"><link rel="prefetch" href="/hl-study-docs/assets/js/29.14652181.js"><link rel="prefetch" href="/hl-study-docs/assets/js/3.6201525e.js"><link rel="prefetch" href="/hl-study-docs/assets/js/30.d61d9ea0.js"><link rel="prefetch" href="/hl-study-docs/assets/js/4.260b3024.js"><link rel="prefetch" href="/hl-study-docs/assets/js/5.2e65d9d7.js"><link rel="prefetch" href="/hl-study-docs/assets/js/6.bcd173c0.js"><link rel="prefetch" href="/hl-study-docs/assets/js/7.026b5af2.js"><link rel="prefetch" href="/hl-study-docs/assets/js/vendors~docsearch.77260563.js">
+    <link rel="stylesheet" href="/hl-study-docs/assets/css/0.styles.fca0694a.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/hl-study-docs/" class="home-link router-link-active"><!----> <span class="site-name">学习文档</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/hl-study-docs/%E6%B7%B1%E5%85%A5JS/2-JS%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/深入JS.html" class="nav-link">
+  初识 js
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/hl-study-docs/%E6%B7%B1%E5%85%A5JS/2-JS%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/深入JS.html" class="nav-link">
+  初识 js
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>深入JS</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>浏览器</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading open"><span>JS基础知识</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/hl-study-docs/深入JS/2-JS基础知识/3-高阶函数和闭包的定义.html" class="sidebar-link">高阶函数和闭包的定义</a></li><li><a href="/hl-study-docs/深入JS/2-JS基础知识/4-函数的this指向.html" class="sidebar-link">函数的this指向</a></li><li><a href="/hl-study-docs/深入JS/2-JS基础知识/5-箭头函数.html" class="sidebar-link">箭头函数</a></li><li><a href="/hl-study-docs/深入JS/2-JS基础知识/6-手写call和apply和bind和arguments.html" class="active sidebar-link">手写call和apply和bind和arguments</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/hl-study-docs/深入JS/2-JS基础知识/6-手写call和apply和bind和arguments.html#实现手写-call" class="sidebar-link">实现手写 call</a></li><li class="sidebar-sub-header"><a href="/hl-study-docs/深入JS/2-JS基础知识/6-手写call和apply和bind和arguments.html#实现手写-apply" class="sidebar-link">实现手写 apply</a></li><li class="sidebar-sub-header"><a href="/hl-study-docs/深入JS/2-JS基础知识/6-手写call和apply和bind和arguments.html#实现手写-bind" class="sidebar-link">实现手写 bind</a></li><li class="sidebar-sub-header"><a href="/hl-study-docs/深入JS/2-JS基础知识/6-手写call和apply和bind和arguments.html#认识-arguments" class="sidebar-link">认识 arguments</a></li></ul></li><li><a href="/hl-study-docs/深入JS/2-JS基础知识/7-纯函数和柯里化和组合函数.html" class="sidebar-link">纯函数和柯里化和组合函数</a></li><li><a href="/hl-study-docs/深入JS/2-JS基础知识/8-严格模式和属性描述符操作.html" class="sidebar-link">严格模式和属性描述符操作</a></li></ul></section></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="实现手写-call"><a href="#实现手写-call" class="header-anchor">#</a> 实现手写 call</h2> <div class="language- extra-class"><pre class="language-text"><code>// 给所有的函数添加一个 hycall 方法
+Function.prototype.myCall = function(thisArg, ...args) {
+    // 在这里可以去执行调用的哪个函数（sum）
+    // 这里的 this 就是调用 myCall 的函数，即 sum
+    // 1.获取需要被执行的函数
+    let fn = this;
+
+    // 2. 对thisArg 转成对象类型（防止传入的是非对象类型）
+    thisArg = thisArg ? Object(thisArg) : window;
+
+    // 3. 将调用函数的this 指向thisArg
+    thisArg.fn = fn;
+
+    // 4. 执行函数
+    let result = thisArg.fn(...args);
+
+    // 5. 删除fn
+    delete thisArg.fn;
+    // 6. 返回结果
+    return result;
+}
+
+
+function sum(num1,num2,num3,num4) {
+    console.log(num1,num2,num3,num4);
+}
+
+var newSum = sum.myCall(&quot;aaa&quot;,10,20,30,40);
+</code></pre></div><h2 id="实现手写-apply"><a href="#实现手写-apply" class="header-anchor">#</a> 实现手写 apply</h2> <div class="language- extra-class"><pre class="language-text"><code>// 给所有的函数添加一个 hyapply 方法
+Function.prototype.myApply = function(thisArg,argArray){
+    // thisArg 如果是null 或者 undefined，那么默认指向window
+    thisArg = thisArg!==null &amp;&amp; thisArg!==undefined ? Object(thisArg) : window;
+
+    // 将当前this == 当前函数赋值给thisArg的fn 属性
+    // 这样thisArg 就可以调用当前函数了
+    thisArg.fn = this;
+
+    // 当参宿和没有传的情况下 需要非空判断
+    argArray = argArray ? argArray : [];
+    let result = thisArg.fn(...argArray);
+
+    // 删除fn
+    delete thisArg.fn;
+    return result;
+}
+
+function sum(num1,num2,num3,num4) {
+    console.log(num1,num2,num3,num4);
+}
+
+var newSum = sum.myApply(&quot;aaa&quot;,[10,20,30,40]);
+</code></pre></div><h2 id="实现手写-bind"><a href="#实现手写-bind" class="header-anchor">#</a> 实现手写 bind</h2> <div class="language- extra-class"><pre class="language-text"><code>// 给所有的函数添加一个 myBind 方法
+Function.prototype.myBind = function(thisArg, ...argArray) {
+    // thisArg 如果是null 或者 undefined，那么默认指向window
+    thisArg = thisArg ? Object(thisArg) : window;
+    // 1. 获取调用bind的函数
+    thisArg.fn = this;
+    // 2. 返回一个函数
+    return function F(...arg) {
+        // 3. thisArg 执行函数并传入参数
+        var res=thisArg.fn(...[...argArray,...arg]);
+        delete thisArg.fn;
+        return res;
+    }
+}
+
+function sum(num1,num2,num3,num4) {
+    console.log(num1,num2,num3,num4);
+}
+
+var newSum = sum.myBind(&quot;aaa&quot;,10);
+newSum(20,30,40);
+
+</code></pre></div><h2 id="认识-arguments"><a href="#认识-arguments" class="header-anchor">#</a> 认识 arguments</h2> <h3 id="特点"><a href="#特点" class="header-anchor">#</a> 特点</h3> <ol><li>arguments是一个类数组对象，它包含传入函数中的所有参数</li> <li>arguments 不是一个数组类型，但是它拥有数组的一些属性，例如 length，比如可以通过index索引来访问，但是它没有数组的一些方法，例如 forEach、map 等</li> <li>arguments 对象还有一些属性，例如 callee 表示当前执行的函数，caller 表示调用当前函数的函数</li></ol> <h3 id="箭头函数中没有arguments"><a href="#箭头函数中没有arguments" class="header-anchor">#</a> 箭头函数中没有arguments</h3> <p>注：如果箭头函数中写了arguments，那么会去上层作用域找，如果找到最高层的全局作用域，在node环境中全局作用域是有arguments，浏览器的全局作用域中是没有arguments</p> <h3 id="arguments转数组"><a href="#arguments转数组" class="header-anchor">#</a> arguments转数组</h3> <ol><li>自己遍历</li></ol> <div class="language- extra-class"><pre class="language-text"><code>function foo(num1,num2){
+    var newArray = [];
+    for(var i=0;i&lt;arguments.length;i++){
+        newArray.push(arguments[i]);
+    }
+}
+</code></pre></div><ol start="2"><li>Array.prototype.slice 将 arguments 转换成数组</li></ol> <div class="language- extra-class"><pre class="language-text"><code>var newArray = Array.prototype.slice.call(arguments);
+
+var newArray2 = [].slice.call(arguments);
+</code></pre></div><ol start="3"><li>ES6 语法 Array.from 将 arguments 转换成数组</li></ol> <div class="language- extra-class"><pre class="language-text"><code>var newArray3 = Array.from(arguments);
+var newArray4 = [...arguments];// 扩展运算符
+</code></pre></div><h3 id="手写数组的slice方法"><a href="#手写数组的slice方法" class="header-anchor">#</a> 手写数组的slice方法</h3> <div class="language- extra-class"><pre class="language-text"><code>Array.prototype.mySlice = function(start,end){
+    var arr = this
+    start = start || 0;
+    end = end || arr.length;
+    var newArray = [];
+    for(var i=start;i&lt;end;i++){
+        newArray.push(arr[i]);
+    }
+    return newArray;
+}
+
+var newArray = [1,2,3,4,5].mySlice(0,3);
+console.log(newArray);
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/hl-study-docs/深入JS/2-JS基础知识/5-箭头函数.html" class="prev">
+        箭头函数
+      </a></span> <span class="next"><a href="/hl-study-docs/深入JS/2-JS基础知识/7-纯函数和柯里化和组合函数.html">
+        纯函数和柯里化和组合函数
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/hl-study-docs/assets/js/app.a7a0deb5.js" defer></script><script src="/hl-study-docs/assets/js/2.ed2108dc.js" defer></script><script src="/hl-study-docs/assets/js/1.50f09b5a.js" defer></script><script src="/hl-study-docs/assets/js/28.3c356d13.js" defer></script>
+  </body>
+</html>

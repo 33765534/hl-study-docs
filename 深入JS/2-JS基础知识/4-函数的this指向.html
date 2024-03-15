@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>this 指向是什么 | 学习文档</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    
+    <meta name="description" content="学习使用 js">
+    
+    <link rel="preload" href="/hl-study-docs/assets/css/0.styles.fca0694a.css" as="style"><link rel="preload" href="/hl-study-docs/assets/js/app.a7a0deb5.js" as="script"><link rel="preload" href="/hl-study-docs/assets/js/2.ed2108dc.js" as="script"><link rel="preload" href="/hl-study-docs/assets/js/1.50f09b5a.js" as="script"><link rel="preload" href="/hl-study-docs/assets/js/26.1b816ef0.js" as="script"><link rel="prefetch" href="/hl-study-docs/assets/js/10.7a8fbf8e.js"><link rel="prefetch" href="/hl-study-docs/assets/js/11.bb7db750.js"><link rel="prefetch" href="/hl-study-docs/assets/js/12.972143b3.js"><link rel="prefetch" href="/hl-study-docs/assets/js/13.c0b20c18.js"><link rel="prefetch" href="/hl-study-docs/assets/js/14.94caa370.js"><link rel="prefetch" href="/hl-study-docs/assets/js/15.41e99379.js"><link rel="prefetch" href="/hl-study-docs/assets/js/16.3d4d0357.js"><link rel="prefetch" href="/hl-study-docs/assets/js/17.3622e246.js"><link rel="prefetch" href="/hl-study-docs/assets/js/18.5d6399c1.js"><link rel="prefetch" href="/hl-study-docs/assets/js/19.a85acb05.js"><link rel="prefetch" href="/hl-study-docs/assets/js/20.38807455.js"><link rel="prefetch" href="/hl-study-docs/assets/js/21.5bf9cc97.js"><link rel="prefetch" href="/hl-study-docs/assets/js/22.1ee5dd9f.js"><link rel="prefetch" href="/hl-study-docs/assets/js/23.8180e310.js"><link rel="prefetch" href="/hl-study-docs/assets/js/24.163b747e.js"><link rel="prefetch" href="/hl-study-docs/assets/js/25.31d34bef.js"><link rel="prefetch" href="/hl-study-docs/assets/js/27.2ab754e9.js"><link rel="prefetch" href="/hl-study-docs/assets/js/28.3c356d13.js"><link rel="prefetch" href="/hl-study-docs/assets/js/29.14652181.js"><link rel="prefetch" href="/hl-study-docs/assets/js/3.6201525e.js"><link rel="prefetch" href="/hl-study-docs/assets/js/30.d61d9ea0.js"><link rel="prefetch" href="/hl-study-docs/assets/js/4.260b3024.js"><link rel="prefetch" href="/hl-study-docs/assets/js/5.2e65d9d7.js"><link rel="prefetch" href="/hl-study-docs/assets/js/6.bcd173c0.js"><link rel="prefetch" href="/hl-study-docs/assets/js/7.026b5af2.js"><link rel="prefetch" href="/hl-study-docs/assets/js/vendors~docsearch.77260563.js">
+    <link rel="stylesheet" href="/hl-study-docs/assets/css/0.styles.fca0694a.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/hl-study-docs/" class="home-link router-link-active"><!----> <span class="site-name">学习文档</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/hl-study-docs/%E6%B7%B1%E5%85%A5JS/2-JS%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/深入JS.html" class="nav-link">
+  初识 js
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/hl-study-docs/%E6%B7%B1%E5%85%A5JS/2-JS%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/深入JS.html" class="nav-link">
+  初识 js
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>深入JS</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>浏览器</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading open"><span>JS基础知识</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/hl-study-docs/深入JS/2-JS基础知识/3-高阶函数和闭包的定义.html" class="sidebar-link">高阶函数和闭包的定义</a></li><li><a href="/hl-study-docs/深入JS/2-JS基础知识/4-函数的this指向.html" class="active sidebar-link">函数的this指向</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/hl-study-docs/深入JS/2-JS基础知识/4-函数的this指向.html#this-指向是什么" class="sidebar-link">this 指向是什么</a></li><li class="sidebar-sub-header"><a href="/hl-study-docs/深入JS/2-JS基础知识/4-函数的this指向.html#this-的指向可以总结为以下四个规则" class="sidebar-link">this 的指向可以总结为以下四个规则</a></li></ul></li><li><a href="/hl-study-docs/深入JS/2-JS基础知识/5-箭头函数.html" class="sidebar-link">箭头函数</a></li><li><a href="/hl-study-docs/深入JS/2-JS基础知识/6-手写call和apply和bind和arguments.html" class="sidebar-link">手写call和apply和bind和arguments</a></li><li><a href="/hl-study-docs/深入JS/2-JS基础知识/7-纯函数和柯里化和组合函数.html" class="sidebar-link">纯函数和柯里化和组合函数</a></li><li><a href="/hl-study-docs/深入JS/2-JS基础知识/8-严格模式和属性描述符操作.html" class="sidebar-link">严格模式和属性描述符操作</a></li></ul></section></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="this-指向是什么"><a href="#this-指向是什么" class="header-anchor">#</a> this 指向是什么</h2> <p>在常见的编程语言中，几乎都有this 这个关键字（Objective-C 中使用的是self），但是在JavaScript中的this 不太一样。</p> <ul><li>常见的面向对象的编程语言中，比如Java、C++、Swift、Dart 等等一系列语言中，this 通常指挥出现在类的方法中。</li> <li>但是在JavaScript中，this 更加灵活，无论是它出现的位置还是它代表的含义。</li> <li>它没有固定的指向，this 的指向是动态的，是由函数的调用方式决定的。</li></ul> <p>我们先来看一下有 this 和没this 的区别：
+<img src="/hl-study-docs/images/image-26.png" alt="JS"></p> <h3 id="this-指向什么尼"><a href="#this-指向什么尼" class="header-anchor">#</a> this 指向什么尼？</h3> <ul><li><p>首先，this 指向调用它的对象</p></li> <li><p>在全局作用域下，this 指向window(浏览器) 注：在Node环境下，this 指向global打印出的是{}</p> <img src="/hl-study-docs/images/image-27.png" alt="JS"></li> <li><p>在类中，this 指向类的实例</p></li> <li><p>箭头函数中的this 指向定义箭头函数时所在的作用域</p></li> <li><p>构造函数中的this 指向构造函数的实例</p></li></ul> <p>开发中很少直接在全局作用域下使用this，所以大部分情况下，我们都是在对象的方法中或者函数中使用this。</p> <ul><li>所有的函数在被调用时，都会创建一个执行上下文（execution context）</li> <li>这个执行上下文中包含两个重要的属性：
+<ul><li>变量对象（variable object）</li> <li>作用域链（scope chain）</li></ul></li> <li>其中，变量对象包含了函数的形参、函数声明、变量声明等。</li> <li>作用域链包含了变量对象的引用，以及父级作用域的引用。</li> <li>函数在执行时，会创建一个称为活动对象（activation object）的执行上下文，这个执行上下文会包含变量对象、作用域链、this等。</li> <li>函数执行完毕后，这个执行上下文会被销毁，但是活动对象会一直保存在内存中，直到函数执行完毕。</li> <li>因此，在函数执行期间，this 的指向会根据函数的调用方式而动态改变。</li> <li>这就是为什么在JavaScript中，this 的指向是不确定的原因。</li></ul> <p>注：this 指向根我们的调用犯法和调用位置有关，和定义位置无关，不是在编译阶段绑定的，而是在执行阶段绑定的。</p> <h2 id="this-的指向可以总结为以下四个规则"><a href="#this-的指向可以总结为以下四个规则" class="header-anchor">#</a> this 的指向可以总结为以下四个规则</h2> <h3 id="规则一-默认绑定"><a href="#规则一-默认绑定" class="header-anchor">#</a> 规则一 ： 默认绑定</h3> <p>什么情况下使用默认绑定尼？独立函数调用</p> <ul><li>独立函数调用我们就可以理解成函数没有绑定到某个对象上进行调用</li> <li>函数被独立调用的时候 this 指向window
+<img src="/hl-study-docs/images/image-24.png" alt="JS"></li></ul> <h3 id="规则二-隐式绑定"><a href="#规则二-隐式绑定" class="header-anchor">#</a> 规则二 ： 隐式绑定</h3> <p>另外一种比较常见的调用方式是通过某个对象进行调用的</p> <ul><li><p>也就是它的调用位置中，是通过某个对象发起的函数调用</p></li> <li><p>通过某个对象发起的函数调用，会隐式绑定this指向某个对象，obj.foo()隐式把obj绑定给函数foo</p> <img src="/hl-study-docs/images/image-25.png" alt="JS"></li></ul> <h3 id="规则三-显示绑定"><a href="#规则三-显示绑定" class="header-anchor">#</a> 规则三 ： 显示绑定</h3> <p>隐式绑定有一个前提条件，那就是它必须是一个对象，如果没有这样的引用，那么this会直接指向全局对象或者undefined。
+如果我们不希望在对象内部调用函数，而是想直接在函数上进行调用，就可以使用call、apply、bind方法。</p> <ul><li>call和apply 区别
+<ul><li>call和apply的作用完全一样，只是接受参数的方式不太一样</li> <li>call的第一个参数是this要指向的对象，后面是一个一个参数</li> <li>apply的第一个参数是this要指向的对象，后面是一个数组</li></ul></li> <li>其中call和apply会立即执行函数，而bind方法会返回一个改变了this指向的函数</li></ul> <p>上面的绑定过程，我们明确的绑定了this指向，所以称之为显示绑定。</p> <h3 id="规则四-new-绑定"><a href="#规则四-new-绑定" class="header-anchor">#</a> 规则四 ： new 绑定</h3> <p>new 绑定是JavaScript中最强大的绑定方式，使用new来调用函数，会自动执行下面的操作：</p> <ul><li>创建一个全新的对象</li> <li>这个新对象会被执行[[原型]]连接</li> <li>这个新对象会绑定到函数调用的this上（this的绑定在这个步骤完成）</li> <li>如果函数没有返回自定义对象，那么new表达式中的函数调用会自动返回这个新对象</li></ul> <h3 id="内置函数的绑定"><a href="#内置函数的绑定" class="header-anchor">#</a> 内置函数的绑定</h3> <ul><li>JavaScript内置了一些函数，比如Math、Array等，这些函数的this指向的是全局对象
+<ul><li>数组的方法第二个参数是绑定this,如果没有绑定 默认this指向是window,除了箭头函数，箭头函数this指向上层作用域</li></ul> <div class="language- extra-class"><pre class="language-text"><code>var names = ['a', 'b', 'c'];
+names.forEach(function(item) {
+  console.log(item,this);
+},'abc');
+names.forEach(function(item) {
+  console.log(item,this);
+},'bca');
+</code></pre></div></li> <li>还有DOM和BOM的原生方法，比如DOM的document.getElementById()等，这些方法的this指向的是DOM对象</li> <li>setTimeout和setInterval中的函数的this指向的是window（不用箭头函数的情况下）</li> <li><img src="/hl-study-docs/images/image-28.png" alt="JS"> <img src="/hl-study-docs/images/image-29.png" alt="JS"></li></ul> <h3 id="优先级"><a href="#优先级" class="header-anchor">#</a> 优先级</h3> <p>new绑定 &gt; 显示绑定 &gt; 隐式绑定 &gt; 默认绑定</p> <p>call、apply的显示绑定高于隐式绑定</p> <div class="language- extra-class"><pre class="language-text"><code>function foo() {
+  console.log(this.a);
+}
+
+var obj1 = {
+  a: 2 
+};
+
+var obj2 = { 
+  a: 3,
+  foo: foo
+};
+
+obj2.foo.call(obj1); // 2
+</code></pre></div><p>bind的显示绑定高于隐式绑定</p> <div class="language- extra-class"><pre class="language-text"><code>function foo() {
+  console.log(this.a);
+}
+
+var obj1 = {
+  a: 2 
+};
+
+var obj2 = { 
+  a: 3,
+  foo: foo
+};
+
+var bar = foo.bind(obj1);
+bar.call(obj2); // 2
+</code></pre></div><p>new 绑定高于隐式绑定</p> <div class="language- extra-class"><pre class="language-text"><code>var obj={
+  name:'张三',
+  foo:function(){
+    console.log(this);
+  }
+}
+var bar=new obj.foo();// {} new出来的新对象
+</code></pre></div><p>new 绑定高于显示绑定</p> <div class="language- extra-class"><pre class="language-text"><code>function foo() {
+  console.log(this);
+}
+
+var bar = foo.bind({ a: 3 });
+
+var obj=new bar(); // {} new出来的新对象
+</code></pre></div><p>特殊场景</p> <ul><li>当 call、apply、bind 绑定的是null和undefined的时候，这两个值在调用的时候会被忽略，实际应用的是默认绑定规则(this绑定成window)</li> <li>间接函数引用</li></ul> <div class="language- extra-class"><pre class="language-text"><code>var obj1={
+  name:'obj1',
+  foo:function(){
+    console.log(this);
+  }
+}
+var obj2={
+  name:'obj2'
+}
+
+(obj2.bar = obj1.foo)(); // window
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/hl-study-docs/深入JS/2-JS基础知识/3-高阶函数和闭包的定义.html" class="prev">
+        高阶函数和闭包的定义
+      </a></span> <span class="next"><a href="/hl-study-docs/深入JS/2-JS基础知识/5-箭头函数.html">
+        箭头函数
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/hl-study-docs/assets/js/app.a7a0deb5.js" defer></script><script src="/hl-study-docs/assets/js/2.ed2108dc.js" defer></script><script src="/hl-study-docs/assets/js/1.50f09b5a.js" defer></script><script src="/hl-study-docs/assets/js/26.1b816ef0.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>遇到函数如何执行 | 学习文档</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    
+    <meta name="description" content="学习使用 js">
+    
+    <link rel="preload" href="/hl-study-docs/assets/css/0.styles.fca0694a.css" as="style"><link rel="preload" href="/hl-study-docs/assets/js/app.a7a0deb5.js" as="script"><link rel="preload" href="/hl-study-docs/assets/js/2.ed2108dc.js" as="script"><link rel="preload" href="/hl-study-docs/assets/js/1.50f09b5a.js" as="script"><link rel="preload" href="/hl-study-docs/assets/js/24.163b747e.js" as="script"><link rel="prefetch" href="/hl-study-docs/assets/js/10.7a8fbf8e.js"><link rel="prefetch" href="/hl-study-docs/assets/js/11.bb7db750.js"><link rel="prefetch" href="/hl-study-docs/assets/js/12.972143b3.js"><link rel="prefetch" href="/hl-study-docs/assets/js/13.c0b20c18.js"><link rel="prefetch" href="/hl-study-docs/assets/js/14.94caa370.js"><link rel="prefetch" href="/hl-study-docs/assets/js/15.41e99379.js"><link rel="prefetch" href="/hl-study-docs/assets/js/16.3d4d0357.js"><link rel="prefetch" href="/hl-study-docs/assets/js/17.3622e246.js"><link rel="prefetch" href="/hl-study-docs/assets/js/18.5d6399c1.js"><link rel="prefetch" href="/hl-study-docs/assets/js/19.a85acb05.js"><link rel="prefetch" href="/hl-study-docs/assets/js/20.38807455.js"><link rel="prefetch" href="/hl-study-docs/assets/js/21.5bf9cc97.js"><link rel="prefetch" href="/hl-study-docs/assets/js/22.1ee5dd9f.js"><link rel="prefetch" href="/hl-study-docs/assets/js/23.8180e310.js"><link rel="prefetch" href="/hl-study-docs/assets/js/25.31d34bef.js"><link rel="prefetch" href="/hl-study-docs/assets/js/26.1b816ef0.js"><link rel="prefetch" href="/hl-study-docs/assets/js/27.2ab754e9.js"><link rel="prefetch" href="/hl-study-docs/assets/js/28.3c356d13.js"><link rel="prefetch" href="/hl-study-docs/assets/js/29.14652181.js"><link rel="prefetch" href="/hl-study-docs/assets/js/3.6201525e.js"><link rel="prefetch" href="/hl-study-docs/assets/js/30.d61d9ea0.js"><link rel="prefetch" href="/hl-study-docs/assets/js/4.260b3024.js"><link rel="prefetch" href="/hl-study-docs/assets/js/5.2e65d9d7.js"><link rel="prefetch" href="/hl-study-docs/assets/js/6.bcd173c0.js"><link rel="prefetch" href="/hl-study-docs/assets/js/7.026b5af2.js"><link rel="prefetch" href="/hl-study-docs/assets/js/vendors~docsearch.77260563.js">
+    <link rel="stylesheet" href="/hl-study-docs/assets/css/0.styles.fca0694a.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/hl-study-docs/" class="home-link router-link-active"><!----> <span class="site-name">学习文档</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/hl-study-docs/%E6%B7%B1%E5%85%A5JS/1-%E6%B5%8F%E8%A7%88%E5%99%A8/深入JS.html" class="nav-link">
+  初识 js
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/hl-study-docs/%E6%B7%B1%E5%85%A5JS/1-%E6%B5%8F%E8%A7%88%E5%99%A8/深入JS.html" class="nav-link">
+  初识 js
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>深入JS</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading open"><span>浏览器</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/hl-study-docs/深入JS/1-浏览器/1-浏览器工作原理和V8引擎.html" class="sidebar-link">浏览器工作原理和V8引擎</a></li><li><a href="/hl-study-docs/深入JS/1-浏览器/2-代码执行过程.html" class="active sidebar-link">代码执行过程</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/hl-study-docs/深入JS/1-浏览器/2-代码执行过程.html#遇到函数如何执行" class="sidebar-link">遇到函数如何执行</a></li><li class="sidebar-sub-header"><a href="/hl-study-docs/深入JS/1-浏览器/2-代码执行过程.html#变量环境和记录" class="sidebar-link">变量环境和记录</a></li><li class="sidebar-sub-header"><a href="/hl-study-docs/深入JS/1-浏览器/2-代码执行过程.html#面试题" class="sidebar-link">面试题</a></li><li class="sidebar-sub-header"><a href="/hl-study-docs/深入JS/1-浏览器/2-代码执行过程.html#认识内存管理" class="sidebar-link">认识内存管理</a></li><li class="sidebar-sub-header"><a href="/hl-study-docs/深入JS/1-浏览器/2-代码执行过程.html#js-的垃圾回收" class="sidebar-link">JS 的垃圾回收</a></li><li class="sidebar-sub-header"><a href="/hl-study-docs/深入JS/1-浏览器/2-代码执行过程.html#常见的gc-算法-引用计算" class="sidebar-link">常见的GC 算法--引用计算</a></li><li class="sidebar-sub-header"><a href="/hl-study-docs/深入JS/1-浏览器/2-代码执行过程.html#常见的gc-算法-标记清除" class="sidebar-link">常见的GC 算法-标记清除</a></li></ul></li></ul></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>JS基础知识</span> <span class="arrow right"></span></p> <!----></section></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="遇到函数如何执行"><a href="#遇到函数如何执行" class="header-anchor">#</a> 遇到函数如何执行</h2> <p>在执行过程中执行到一个函数时，就会根据函数体创建一个函数执行上下文（Functional Execution Context，简称FEC），并且压入到EC Stack中。EC Stack是一个LIFO的数据结构，即最后 pushed进去的上下文，最早会被pop出来。</p> <p>FEC 中包含三部分内容：</p> <ol><li>第一部分：在解析函数称为AST（Abstract Syntax Tree）语法树时，会创建一个Activation Object(简称AO)，包含了函数的所有局部变量、命名参数、自由变量以及this等。</li> <li>第二部分：作用域链：由 VO(在函数中就是AO对象)和父级VO组成，查找时会一层层查找</li> <li>第三部分：this 绑定的值
+<img src="/hl-study-docs/images/image-9.png" alt="JS"></li></ol> <p>FEC 被放入到 ECS 中</p> <img src="/hl-study-docs/images/image-10.png" alt="JS"> <p>FEC 开始执行代码
+<img src="/hl-study-docs/images/image-11.png" alt="JS"></p> <p>执行过程：
+首先 全局执行上下文 会被放入到 执行上下文栈 中,</p> <div class="language- extra-class"><pre><code>而执行前 全局上下文 中的VO对象就指向GO对象
+
+然后 开始执行代码 。
+
+当执行到函数时，会创建一个 函数执行上下文 ，函数执行上下文 会入栈，这个函数执行上下文跟全局执行上下文类似，也有VO，不同的是这里的VO指向AO(Activation Object)对象。
+
+AO对象里面放着函数中的定义的参数、变量等。 当这个函数执行完毕时，这个函数上下文会出栈、销毁。AO对象也会被回收。
+
+当函数再次执行时，重复上述过程：
+
+创建函数上下文-&gt;入栈-&gt;执行函数代码-&gt;出栈-&gt;销毁。
+
+不管是AO对象中还是GO对象中，在代码没有执行到变量之前，变量都是没有被赋值的。可以把AO理解为一个小的函数作用域，而GO是一个大的全局作用域。作用域中代码的执行机制是一样的。
+
+我们知道函数内部可以使用函数外部的变量，这是因为作用域链的存在。
+
+当我们使用某一个变量时，会在自身作用域里查找，若没有就向上一级查找，直到查找到全局作用域。
+
+注：函数的父级作用域确定阶段是预编译阶段，跟函数位置有关，跟调用关系无关。
+</code></pre></div><p>回顾：
+在Parse阶段会生成一个全局对象 Global Object(GO)，这个对象里面放着公共类，以及代码中定义的全局变量，函数等，还有window对象也就是go自己。（GO对象包含window对象，GO对象又指向window对象）</p> <p>调用栈：js引擎内部有一个执行上下文栈（Execution Context Stack，简称ECS），它是用于执行代码的调用栈。
+堆内存：对应的有一个堆内存（Heap），堆内存用于存储对象和数组。</p> <h2 id="变量环境和记录"><a href="#变量环境和记录" class="header-anchor">#</a> 变量环境和记录</h2> <img src="/hl-study-docs/images/image-12.png" alt="JS"> <p>变量对象 VO 已经编程了 变量环境 VE</p> <p>变量环境 VE 又包含了 词法环境 LEX</p> <h2 id="面试题"><a href="#面试题" class="header-anchor">#</a> 面试题</h2> <img src="/hl-study-docs/images/image-13.png" alt="JS"> <img src="/hl-study-docs/images/image-14.png" alt="JS"> <p>b没有定义var  就会被保存到全局</p> <img src="/hl-study-docs/images/image-15.png" alt="JS"> <h2 id="认识内存管理"><a href="#认识内存管理" class="header-anchor">#</a> 认识内存管理</h2> <p>不管什么样的编程语言，在代码执行过程中都是需要给他分配内存的，不同的是某些编程语言需要我们自己手动的管理内存，某些编程语言会可以自动帮助我们管理内存。<br>
+不管以什么样的方式来管理内存，内存的管理都会有如下的声明周期：
+1. 分配申请你需要的内存（申请）
+2. 使用分配的内存（存放一些东西，比如对象等）
+3. 不需要使用时，对其进行释放</p> <p>JavaScript 通常情况下是不需要手动来管理的</p> <p>JavaScript 会在定义变量时为我们分配内存。
+<img src="/hl-study-docs/images/image-16.png" alt="JS"></p> <h2 id="js-的垃圾回收"><a href="#js-的垃圾回收" class="header-anchor">#</a> JS 的垃圾回收</h2> <p>因为内存的大小是有限的，所以当内存不做需要的时候，我们需要对其进行释放，以便腾出更多的内存空间。
+大部分现代的编程语言都是由自己的垃圾回收机制的：</p> <ol><li>垃圾回收的英文 Garbage Collection,简称 GC</li> <li>对于不再使用的对象，我们称之为是垃圾，需要被回收，以便释放更多内存空间</li> <li>而我们的语言运行环境，比如java的运行环境 JVM，JavaScript的运行环境js引擎都会内存 垃圾回收器</li> <li>垃圾回收器 我们也会简称GC,其实是指垃圾回收器</li></ol> <h2 id="常见的gc-算法-引用计算"><a href="#常见的gc-算法-引用计算" class="header-anchor">#</a> 常见的GC 算法--引用计算</h2> <p>当一个对象有一个引用指向它时，那么这个对象的引用就+1，当一个对象的引用为0时，这个对象就可以被销毁掉；
+算法：当我们的 reation count == 0时候 GC会在下次回收时回收掉</p> <img src="/hl-study-docs/images/image-17.png" alt="JS"> <p>这个算法有一个很大的弊端就是会产生循环引用</p> <img src="/hl-study-docs/images/image-18.png" alt="JS"> <h2 id="常见的gc-算法-标记清除"><a href="#常见的gc-算法-标记清除" class="header-anchor">#</a> 常见的GC 算法-标记清除</h2> <p>这个算法是设置一个根对象（root object），垃圾回收器会定期从根开始，找所有从根开始引用的对象，然后把所有能从根找到的对象，还有所有被这些对象找到的对象，然后把所有这些对象标记为存活的对象，然后把所有没有被标记的对象销毁掉。</p> <p>这个算法可以很好的解决循环引用的问题</p> <img src="/hl-study-docs/images/image-19.png" alt="JS"> <p>JS引擎比较广泛的采用的就是标记清除算法，当然类似于V8 引擎为了进行更好的优化，它在算法的实现细节上也会结合一些其他的算法，例如：</p> <h3 id="常见的gc-算法-标记整理"><a href="#常见的gc-算法-标记整理" class="header-anchor">#</a> 常见的GC 算法-标记整理</h3> <p>这个算法和标记清除算法很相似，但是这个算法会在整理存活对象的同时，也会整理内存空间。</p> <h3 id="常见的gc-算法-分代回收"><a href="#常见的gc-算法-分代回收" class="header-anchor">#</a> 常见的GC 算法-分代回收</h3> <p>分代回收算法是针对不同的对象，采用不同的算法来进行垃圾回收的。</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/hl-study-docs/深入JS/1-浏览器/1-浏览器工作原理和V8引擎.html" class="prev">
+        浏览器工作原理和V8引擎
+      </a></span> <span class="next"><a href="/hl-study-docs/深入JS/2-JS基础知识/3-高阶函数和闭包的定义.html">
+        高阶函数和闭包的定义
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/hl-study-docs/assets/js/app.a7a0deb5.js" defer></script><script src="/hl-study-docs/assets/js/2.ed2108dc.js" defer></script><script src="/hl-study-docs/assets/js/1.50f09b5a.js" defer></script><script src="/hl-study-docs/assets/js/24.163b747e.js" defer></script>
+  </body>
+</html>
