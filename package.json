@@ -6,7 +6,7 @@
   "scripts": {
     "doc:dev": "vuepress dev docs",
     "doc:build": "set NODE_OPTIONS=--openssl-legacy-provider && vuepress build docs",
-    "doc:deploy": "gh-pages -d dist -r https://github.com/33765534/hl-study-docs.git -b gh-pages"
+    "doc:deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
